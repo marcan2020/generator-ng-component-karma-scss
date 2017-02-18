@@ -1,1 +1,1 @@
-export * from './<%= file_name %>.component';
+export * from './<%= FileName %>.component';

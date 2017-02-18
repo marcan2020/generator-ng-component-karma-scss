@@ -1,25 +1,25 @@
 import { TestBed, ComponentFixture, tick } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { <%= component_name %>Component } from './<%= file_name %>.component';
+import { <%= ComponentName %>Component } from './<%= FileName %>.component';
 import { click } from '../../testing';
 
-let fixture: ComponentFixture<<%= component_name %>Component>;
-let comp: <%= component_name %>Component;
+let fixture: ComponentFixture<<%= ComponentName %>Component>;
+let comp: <%= ComponentName %>Component;
 
-describe('<%= component_name %>Component', () => {
+describe('<%= ComponentName %>Component', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
-        <%= component_name %>Component
+        <%= ComponentName %>Component
       ]
     });
 
-    fixture = TestBed.createComponent(<%= component_name %>Component);
+    fixture = TestBed.createComponent(<%= ComponentName %>Component);
     comp = fixture.componentInstance;
   });
 
-  it('should create <%= component_name %>Component', () => {
+  it('should create <%= ComponentName %>Component', () => {
     expect(comp).toBeTruthy();
   });
 

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-<%= file_name %>',
-  templateUrl: './<%= file_name %>.component.html',
-  styleUrls: ['./<%= file_name %>.component.scss']
+  selector: 'app-<%= FileName %>',
+  templateUrl: './<%= FileName %>.component.html',
+  styleUrls: ['./<%= FileName %>.component.scss']
 })
-export class <%= component_name %>Component {
+export class <%= ComponentName %>Component {
 
   constructor() { }
 

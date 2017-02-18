@@ -27,8 +27,8 @@ module.exports = Generator.extend({
     let name = this.props.componentName;
 
     let context = {
-        file_name: name,
-        component_name: name.charAt(0).toUpperCase() + name.slice(1)
+      FileName: name,
+      ComponentName: name.charAt(0).toUpperCase() + name.slice(1)
     };
 
     this.fs.copyTpl(
@@ -60,6 +60,5 @@ module.exports = Generator.extend({
       this.destinationPath('index.ts'),
       context
     );
-
   }
 });
